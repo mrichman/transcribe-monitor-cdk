@@ -33,7 +33,7 @@ export class TranscribeMonitorCdkStack extends cdk.Stack {
     // Add IAM permissions for the Lambda function
     monitoringFunction.addToRolePolicy(
       new iam.PolicyStatement({
-        actions: ['transcribe:ListTranscriptionJobs'],
+        actions: ['transcribe:ListCallAnalyticsJobs'],
         resources: ['*'],
       }),
     );
